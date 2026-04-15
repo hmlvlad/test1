@@ -1,0 +1,7 @@
+services:
+  website:
+    build: ./web_root
+    container_name: ai-landing
+    ports:
+      - "8080:80"
+    restart: unless-stopped
